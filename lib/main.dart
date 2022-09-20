@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import './pages/birth_register.dart';
+import './pages/death_register.dart';
+import './pages/marriage_register.dart';
 import './pages/register_type.dart';
 import './pages/login.dart';
 
@@ -27,6 +30,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/register':(context) => const RegisterType(),
+        '/birth':(context) => const BirthRegister(),
+        '/death':(context) => const DeathRegister(),
+        '/marriage':(context) => const MarriageRegister(),
       },
       home: const LoginPage(),
     );
